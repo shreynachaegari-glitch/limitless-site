@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Limitless · AI agents without limits</title>
+    <meta name="description" content="Six AI agents on an endless helix. Meet one, hand it a task, watch every step." />
+    <meta name="theme-color" content="#000000" />
+    <meta property="og:title" content="Limitless · AI agents without limits" />
+    <meta property="og:description" content="Six AI agents in orbit. Meet one, hand it a task, watch every step." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <!-- Critical paint: dark from the very first frame, before the stylesheet loads. -->
+    <style>html,body{background:#000;margin:0}.poster{place-items:center;display:grid;position:fixed;inset:0}.poster-core{opacity:.25;width:min(46vmin,420px)}</style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600&family=Instrument+Serif:ital@0;1&family=Martian+Mono:wdth,wght@75..112.5,300..600&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="./assets/index-ColqR074.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BCopN1d5.css">
+  </head>
+  <body>
+    <!--
+      Poster frame: painted by plain HTML/CSS before any JS runs, so there is
+      never a loading screen. The WebGL stage cross-fades over it when its
+      first frame is ready (body.stage-ready), and it stays as the fallback
+      when WebGL2 is missing.
+    -->
+    <div class="poster" aria-hidden="true">
+      <svg class="poster-core" viewBox="0 0 240 120">
+        <defs>
+          <linearGradient id="pg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#3FE0C5" />
+            <stop offset=".45" stop-color="#6D4BFF" />
+            <stop offset=".8" stop-color="#E6E8F6" />
+            <stop offset="1" stop-color="#F0D48A" />
+          </linearGradient>
+        </defs>
+        <path d="M120 60 C 150 20, 215 20, 215 60 S 150 100, 120 60 S 25 20, 25 60 S 90 100, 120 60 Z" fill="none" stroke="url(#pg)" stroke-width="7" />
+      </svg>
+    </div>
+    <div id="root"></div>
+  </body>
+</html>
